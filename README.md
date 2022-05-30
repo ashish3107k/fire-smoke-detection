@@ -291,17 +291,19 @@ ArticleDownload PDFView Record in ScopusGoogle Scholar
 Unravelling the importance of forest age stand and forest structure driving microbiological soil properties, enzymatic activities and soil nutrients content in mediterranean spanish black pine (pinus nigra ar. ssp. salzmannii) forest
 Sci. Total Environ., 562 (2016), pp. 145-154, 10.1016/j.scitotenv.2016.03.160
 ArticleDownload PDFView Record in ScopusGoogle Scholar
-             [3] Pan Y., Birdsey R.A., Phillips O.L., Jackson R.B.
+             
+[3] Pan Y., Birdsey R.A., Phillips O.L., Jackson R.B.
 The structure, distribution, and biomass of the world’s forests
 Annu. Rev. Ecol. Evol. Syst., 44 (2013), pp. 593-622, 10.1146/annurev-ecolsys-110512-135914
  View PDF
 View Record in ScopusGoogle Scholar
-             [4] Martinez-de Dios J.R., Arrue B.C., Ollero A., Merino L., Gómez-Rodríguez F.
+             
+[4] Martinez-de Dios J.R., Arrue B.C., Ollero A., Merino L., Gómez-Rodríguez F.
 Computer vision techniques for forest fire perception
 Image Vis. Comput., 26 (4) (2008), pp. 550-562, 10.1016/j.imavis.2007.07.002
 ArticleDownload PDFView Record in ScopusGoogle Scholar
-[5]
-Harrison M.E., Page S.E., Limin S.H.
+
+[5]Harrison M.E., Page S.E., Limin S.H.
 The global impact of Indonesian forest fires
 Biologist, 56 (3) (2009), pp. 156-163
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.709.6831&rep=rep1&type=pdf
