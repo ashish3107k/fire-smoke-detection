@@ -134,52 +134,97 @@ Initial Setup
 Remove unwanted Applications.
 
 sudo apt-get remove --purge libreoffice*
+
 sudo apt-get remove --purge thunderbird*
+
 Create Swap file
+
 sudo fallocate -l 10.0G /swapfile1
+
 sudo chmod 600 /swapfile1
+
 sudo mkswap /swapfile1
+
 sudo vim /etc/fstab###########add line###########
+
 /swapfile1 swap swap defaults 0 0
+
 Cuda Configuration
+
 vim ~/.bashrc#############add line #############
+
 export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+
 export LD_LIBRARY_PATh=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
 export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1source ~/.bashrc
+
 Udpade and Upgrade a System
+
 sudo apt-get update
+
 sudo apt-get upgrade
+
 Install Some Required Packages
-sudo apt install curlcurl https://bootstrap.pypa.io/get-pip.py -o get-pip.pysudo python3 get-pip.pysudo apt-get install libopenblas-base libopenmpi-devvim ~/.bashrc
+
+sudo apt install curlcurl https://bootstrap.pypa.io/get-pip.py -o get-pip.pysudo python3 get-pip.pysudo apt-get install libopenblas-base libopenmpi-devvim 
+~/.bashrc
+
 ###### add line ########
+
 export OPENBLAS_CORETYPE=ARMV8source ~/.bashrcsudo pip3 install pillow
+
 Install Torch
-curl -LO https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whlmv p57jwntv436lfrd78inwl7iml6p13fzh.whl torch-1.8.0-cp36-cp36m-linux_aarch64.whlsudo pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl#Check Torch, output should be “True”
+
+curl -LO https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whlmv p57jwntv436lfrd78inwl7iml6p13fzh.whl torch-1.8.0-cp36-cp36m-
+linux_aarch64.whlsudo pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl#Check Torch, output should be “True”
+
 sudo python3 -c "import torch; print(torch.cuda.is_available())"
+
 Installation of Torchvision.
+
 git clone --branch v0.9.1 https://github.com/pytorch/vision torchvision
+
 cd torchvision/
+
 sudo python3 setup.py install
+
 Clone yolov5
+
 cd
+
 git clone https://github.com/ultralytics/yolov5.git
+
 cd yolov5/sudo pip3 install numpy==1.19.4# comment torch,PyYAML and torchvision in requirement.txtsudo pip3 install --ignore-installed PyYAML>=5.3.1
+
 sudo pip3 install -r requirements.txt
+
 Download weights and Test Yolov5 Installation on USB webcam
+
 sudo python3 detect.py
+
 sudo python3 detect.py --weights yolov5s.pt --source 0
+
 Fire and Smoke Dataset Training
+
 We used Google Colab And Roboflow
+
 Train your model on colab and download the weights and past them into yolov5 folder  link of project
+
 colab files given in repo and GitHub link
 
+
 GitHub – ashishkarambhe/fire_and_smoke -Detection-using-Yolov5-on-2gb-Jetson-Nano: Fire and Smoke Detection…
+
 Fire and Smoke Detection system which will detect objects based on whether it is Fire and smoke
 github.com
 
 Running Fire and Smoke Detection Model
+
 source ‘0’ for webcam
+
 !python detect.py --weights best.pt --img 416 --conf 0.1 --source 0
+
 Output Video
 
 ### Demo
